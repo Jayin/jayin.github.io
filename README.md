@@ -1,4 +1,4 @@
-jayin.gihub.io
+jayin.github.io
 ==============
 
 blog
