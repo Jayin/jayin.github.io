@@ -5,7 +5,7 @@ jayin.github.io
   
   
 
-有时候，美景就在身旁。
+Thanks GitHub!
 ---
 ![](http://ww1.sinaimg.cn/mw690/6ee3e8b3tw1e9pr98m0rlj201c01cgld.jpg)
 [Online Markdown Tool](http://www.zybuluo.com/mdeditor)  
