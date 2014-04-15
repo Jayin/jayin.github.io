@@ -1,0 +1,47 @@
+body {
+    background: #f5f5f5 url('./graphy.png') repeat;
+}
+
+.home header h1 {
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: -3px;
+}
+
+.home header p {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+section h1 {
+    margin-bottom: 15px;
+}
+
+hr {
+    height: 2px;
+    background: gainsboro;
+}
+
+.project {
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 8px;
+}
+
+.project dt {
+    margin-top: 20px;
+}
+
+.project dd {
+    font-size: 16px;
+    color: #808080;
+    margin-top: 8px;
+    margin-left:12px;
+}
+
