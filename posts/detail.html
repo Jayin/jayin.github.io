@@ -37,19 +37,34 @@
 <div class="container">
     <header>
         <h1>Posts in my blog</h1>
-
-        <p>comming soon</p>
     </header>
-    <p id="content"></p>
+    <hr>
+    <p id="content" ></p>
 </div>
 </body>
 
 <script>
-    $(document).ready(function () {
 
-        $.get('../diaries/2014-04-06.md', function (result) {
-            $("#content").html(marked(result));
-        });
+    $(document).ready(function () {
+        var getTitle = function () {
+            var str = location.search;
+            strs = str.replace('?', '').split('&');
+            for (var i = 0; i < strs.length; i++) {
+                if (strs[i].indexOf('post_title') != -1) {
+                    return strs[i].split('=')[1];
+                }
+            }
+            return null;
+        }
+        if (getTitle() != null) {
+            $.get('../diaries/'+getTitle(), function (result) {
+                $("#content").html(marked(result));
+            });
+        }else{
+            // not content....
+              $("#content").html(marked('No content'));
+        }
+
     });
 
 </script>
