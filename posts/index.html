@@ -11,7 +11,6 @@
     <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <script src="../assets/bootstrap/js/jquery.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/bootstrap/js/marked.js"></script>
 </head>
 <body class="home" screen_capture_injected="true">
 <div class="navbar">
@@ -38,19 +37,24 @@
     <header>
         <h1>Posts in my blog</h1>
 
-        <p>comming soon</p>
     </header>
     <p id="content"></p>
 </div>
-</body>
 
 <script>
     $(document).ready(function () {
-
-        $.get('../diaries/2014-04-06.md', function (result) {
-            $("#content").html(marked(result));
+        $.getJSON('../diaries/1.json', function (data, status) {
+            var result = data.result;
+            for (var index in result) {
+                var fileName = result[index] +"";
+                var title = fileName.split('.')[0];
+                var text1 = '<p><a href="../posts/detail.html?post_title=' + fileName+ '">'+title+'</a></p>';
+                $("#content").append(text1);
+            }
         });
-    });
-
+2    });
 </script>
+</body>
+
+
 </html>
