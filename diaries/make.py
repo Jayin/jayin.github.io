@@ -5,7 +5,7 @@
 #support sort the diaries by time [ok]
 __author__ = 'Jayin Ton'
 
-import os, re, json, copy
+import os, re, json, copy, time
 
 
 #config
@@ -17,9 +17,9 @@ ignore = [
 ]
 
 
-def generation(page, list):
+def generation(page, l):
     with open(str(page) + ".json", mode="w") as f:
-        f.write(json.dumps({'result': ','.join(list).decode('gbk').split(',')}))
+        f.write(json.dumps({'result': ','.join(l).decode('gbk').split(',')}))
 
 
 def main():
@@ -31,26 +31,37 @@ def main():
             if re.findall(pattern, t):
                 raw.remove(t)
     raw.sort(reverse=False)
-    # with open("1.json", mode="w") as f:
-    #     f.write(json.dumps({'result': [','.join(l).decode('gbk').split(',')]}))
     size = len(raw)
-    print size
+    # print size
     page = 1
     while page * limit <= size:
-        print page, '--> ', raw[(page - 1) * limit:page * limit]
+        # print page, '--> ', raw[(page - 1) * limit:page * limit]
         generation(page, raw[(page - 1) * limit:page * limit])
         page += 1
-    print page, '--> ', raw[(page - 1) * limit:]
+    # print page, '--> ', raw[(page - 1) * limit:]
     generation(page, raw[(page - 1) * limit:])
 
-    print("Build finished")
+    with open('info.json', mode='w') as f:
+        f.write(json.dumps({'pages': page, 'last_motify': long(time.time() * 1000)}))
+    print 'total=', size, 'pages=', page
+    print "Build finished."
 
 
-def cleanUp():
-    pass
+def cleanup():
+    '''
+    clean up the `json` files
+    '''
+    l = list(os.listdir(os.getcwd()))
+    pattern = re.compile(r'.+\.json', re.IGNORECASE)
+    for x in l:
+        #
+        if re.findall(pattern, x):
+            os.remove(os.getcwd() + os.path.sep + x)
+            print 'remove file--', os.getcwd() + os.path.sep + x
+    print 'clean up .json files finished'
 
 
 if __name__ == "__main__":
-    cleanUp()
+    cleanup()
     main()
 
