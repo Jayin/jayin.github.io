@@ -1,11 +1,11 @@
 #encoding:utf-8
-#to do:
-#support Chinese File name yet...  [ok]
-#support paging yet
-#support sort the diaries by time [ok]
 __author__ = 'Jayin Ton'
 
-import os, re, json, copy, time
+import os
+import re
+import json
+import copy
+import time
 
 
 #config
@@ -19,7 +19,10 @@ ignore = [
 
 def generation(page, l):
     with open(str(page) + ".json", mode="w") as f:
-        f.write(json.dumps({'result': ','.join(l).decode('gbk').split(',')}))
+        if len(l) > 0:
+            f.write(json.dumps({'result': ','.join(l).decode('gbk').split(',')}))
+        else:
+            f.write(json.dumps({'result': []}))
 
 
 def main():
@@ -48,9 +51,9 @@ def main():
 
 
 def cleanup():
-    '''
+    """
     clean up the `json` files
-    '''
+    """
     l = list(os.listdir(os.getcwd()))
     pattern = re.compile(r'.+\.json', re.IGNORECASE)
     for x in l:
@@ -64,4 +67,3 @@ def cleanup():
 if __name__ == "__main__":
     cleanup()
     main()
-
