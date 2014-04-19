@@ -14,6 +14,9 @@ ignore = [
     '.+\.py'
 ]
 
+def sort(files):
+    print files.sort(reverse=True)
+
 
 def main():
     l = list(os.listdir(os.getcwd()))
@@ -22,10 +25,11 @@ def main():
         for t in l:
             if (re.findall(pattern, t)):
                 l.remove(t)
-
+    l.sort(reverse=False)
     with open("1.json", mode="w") as f:
         f.write(json.dumps({'result': l}))
-    print("Finish")
+    print("Build finished")
+    print l
 
 
 if __name__ == "__main__":
