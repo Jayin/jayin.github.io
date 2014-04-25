@@ -5,7 +5,7 @@
     <title>Home-Jayin Ton</title>
     <link rel="shortcut icon" href="/assets/public/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"  >
     <link href="../static/css/site.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
@@ -27,19 +27,29 @@
         </div>
         <div class="span4">
             <ul class="nav" style="float:right">
-                <li><a target="_blank" href="http://weibo.com/tjy273942569/"><img src="../assets/public/img/weibo.png" style="height: 20px;width: 24px"></a></li>
-                <li><a target="_blank" href="https://github.com/Jayin"><img src="../assets/public/favicon.ico"style="height: 20px;width: 20px"></a></li>
-                <li><a target="_blank" href="https://plus.google.com/101862812850960840018"><img src="../assets/public/img/g+.png" style="height: 20px;width: 50px"></a></li>
+                <li><a target="_blank" href="http://weibo.com/tjy273942569/"><img src="../assets/public/img/weibo.png"
+                                                                                  style="height: 20px;width: 24px"></a>
+                </li>
+                <li><a target="_blank" href="https://github.com/Jayin"><img src="../assets/public/favicon.ico"
+                                                                            style="height: 20px;width: 20px"></a></li>
+                <li><a target="_blank" href="https://plus.google.com/101862812850960840018"><img
+                        src="../assets/public/img/g+.png" style="height: 20px;width: 50px"></a></li>
             </ul>
         </div>
     </div>
 </div>
 <div class="container-fluid">
-    <header>
-        <h1>Posts in my blog</h1>
-    </header>
-    <hr>
-    <p id="content" ></p>
+    <div class="row-fluid">
+        <div class="span2"></div>
+        <div class="span8">
+            <header>
+                <h1>Posts in my blog</h1>
+            </header>
+            <hr>
+            <p id="content"></p>
+        </div>
+        <div class="span2"></div>
+    </div>
 </div>
 </body>
 
@@ -57,12 +67,12 @@
             return null;
         }
         if (getTitle() != null) {
-            $.get('../diaries/'+getTitle(), function (result) {
+            $.get('../diaries/' + getTitle(), function (result) {
                 $("#content").html(marked(result));
             });
-        }else{
+        } else {
             // not content....
-              $("#content").html(marked('No content'));
+            $("#content").html(marked('No content'));
         }
     });
 
