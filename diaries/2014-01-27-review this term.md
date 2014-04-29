@@ -18,3 +18,11 @@
 
 ##Next ?
 **"where is there?"**这句话是期末结束，工作室要封场我们收拾东西离开时讲起的一句话。我们或许不能明确知道去哪里，但我们有信心走下去。
+
+###附上邑大开发者沙龙图片
+![backgroud](../img/2014012701.jpg)  
+![backgroud](../img/2014012702.jpg)  
+![backgroud](../img/2014012703.jpg)  
+![backgroud](../img/2014012704.jpg)  
+![backgroud](../img/2014012705.jpg)  
+![backgroud](../img/2014012706.jpg)  
