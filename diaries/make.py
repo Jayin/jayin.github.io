@@ -9,7 +9,7 @@ import time
 
 
 #config
-limit = 10
+limit = 100
 ignore = [
     'README.md',
     '.+\.json',
