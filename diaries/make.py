@@ -19,10 +19,12 @@ ignore = [
 
 def generation(page, l):
     with open(str(page) + ".json", mode="w") as f:
+        res = []
         if len(l) > 0:
-            f.write(json.dumps({'result': ','.join(l).decode('gbk').split(',')}))
-        else:
-            f.write(json.dumps({'result': []}))
+           for f_name in l:
+                res.append(f_name.decode('gbk'))
+        f.write(json.dumps({'result': res}))
+
 
 
 def main():
