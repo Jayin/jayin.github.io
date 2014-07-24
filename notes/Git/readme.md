@@ -105,6 +105,38 @@ $ git config --global alias.br branch
 ```shell
 $ git ci -m "bala bala bala..."
 ```
+
+### 分支管理策略
+通常，合并分支时，如果可能，Git会用“Fast forward”模式，但这种模式下，删除分支后，会丢掉分支信息。
+
+如果要强制禁用“Fast forward”模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
+
+下面我们实战一下--no-ff方式的merge： 
+
+首先，仍然创建并切换dev分支：
+```shell
+$ git checkout -b dev
+Switched to a new branch 'dev'
+修改readme.txt文件，并提交一个新的commit：
+```shell
+$ git add readme.txt 
+$ git commit -m "add merge"
+[dev 6224937] add merge
+ 1 file changed, 1 insertion(+)
+```
+现在，我们切换回master：
+```shell
+$ git checkout master
+Switched to branch 'master'
+```
+准备合并dev分支，请注意--no-ff参数，表示禁用“Fast forward”：
+```shell
+$ git merge --no-ff -m "merge with no-ff" dev
+Merge made by the 'recursive' strategy.
+ readme.txt |    1 +
+ 1 file changed, 1 insertion(+)
+```
+因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去。
  
 
 
