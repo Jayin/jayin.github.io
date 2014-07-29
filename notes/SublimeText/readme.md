@@ -23,4 +23,10 @@ references->key bindings -User
 ### PHP Syntax Checker
 语法检查
 
+### JsLint
+语法检查，代码质量检测
+
+### Git
+用了就再也回不去
+
 
