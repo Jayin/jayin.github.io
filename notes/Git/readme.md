@@ -137,6 +137,13 @@ Merge made by the 'recursive' strategy.
  1 file changed, 1 insertion(+)
 ```
 因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去。
+
+### Git中的着色
+Git能够为输出到你终端的内容着色，以便你可以凭直观进行快速、简单地分析，有许多选项能供你使用以符合你的偏好。
+Git会按照你需要自动为大部分的输出加上颜色，你能明确地规定哪些需要着色以及怎样着色，设置color.ui为true来打开所有的默认终端着色。
+```shell
+$ git config --global color.ui true 
+```
  
 
 
