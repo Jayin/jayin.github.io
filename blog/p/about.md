@@ -1,7 +1,7 @@
 关于
 ===
 
-> Life is short, I use PHP.
+> Life is short , I use PHP、Python and Java.
 
 
 坐标 :广东江门 
@@ -11,24 +11,25 @@
 Github :[@Jayin](https://github.com/Jayin) 
 
 
-简历
+基本信息
 ===
-* 唐杰英,男，20岁 大三
-* 广东江门 五邑大学
-* 15088132354
+* 唐杰英 大三
+* Phone: 15088132354
+* Email: tonjayin@gmail.com
 * 个人博客: http://jayin.github.io/
 *  微  博 ：http://weibo.com/tjy273942569
 *  GitHub : https://github.com/Jayin
 
 常用语言:Java/Python/PHP
 个人认为擅长:Android > PHP
+Python并没有在任何产品中实际使用，只是作为工具语言去使用
 
 实习经历
 ===
 就在刚过去大二暑假，我在一江门创业公司做外贸商城的开发,负责后台(主)/前端(助攻)。
 因为实习的需要,我才学习PHP,我们使用开源的商店系统[OpenCart](https://github.com/opencart/opencart)进行二次开发(而没有采用ecshop)，
 我也给opencart提过3次PR(2次合并,1次手动合并)
-[当时开发的案例](http://one.landigit.com/index.php)
+
  
 
 项目
@@ -41,8 +42,13 @@ Github :[@Jayin](https://github.com/Jayin)
 >安卓应用 Java学习助手 主导开发
 
 * [SiyuanGroup](https://github.com/Jayin/SiyuanGroup)
-> 校友录Android客户端 主导开发
-> (后台)[https://github.com/node-fun/siyuan]也开源了
-> 这是一次由我们学生主导整个产品的开发的产品，虽然最后没得满意的回报
+> 校友录Android客户端 主导开发  
+> [后台](https://github.com/node-fun/siyuan)也开源了  
+> 这是一次由我们学生主导整个产品的开发的产品，虽然最后没得满意的回报  
 
 * 更多可以查看我的GitHub，每天我做的东西都会提交GitHub,算是半个GitHub重度用户
+
+More
+===
+* 曾自发组织2次校内开发者沙龙
+* 在袂卓工作室呆了3年

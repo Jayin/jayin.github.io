@@ -2,7 +2,7 @@
 
 # [Jayin Ton](.)
 
-> Life is short, I use PHP.
+> I write code.
 
 - [Project](projects/index.md)
 - [Diaries](diaries/index.md)

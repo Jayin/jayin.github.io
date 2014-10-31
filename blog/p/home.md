@@ -1,6 +1,6 @@
 Jayin Blog
 ========
->Life is short,I use PHP,Python,Java.
+> Life is short , I use PHP、Python and Java.
 
 ![life](./img/bg.jpg)
 
