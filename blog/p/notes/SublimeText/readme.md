@@ -43,7 +43,8 @@ alt+m -> open in browser
     ]
 ```
 
-### sublimecodeintel 代码提示
+### sublimecodeintel 
+代码提示
 
 ### PHP Syntax Checker
 语法检查
