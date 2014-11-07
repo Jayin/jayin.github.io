@@ -25,6 +25,9 @@ Preference-defalut:
 插件
 ===
 
+### Emmet
+前端码农必备
+
 ### Markdown Preview
 好用不解释。  
 references->key bindings -User   
