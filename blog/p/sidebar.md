@@ -7,6 +7,6 @@
 - [Project](projects/index.md)
 - [Diaries](diaries/index.md)
 - [Tech](tech/index.md)
-- [Library](library/index.md)
 - [Notes](notes/readme.md)
+- [Library](library/index.md)
 - [About](about.md)
