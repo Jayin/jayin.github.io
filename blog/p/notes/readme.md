@@ -5,7 +5,7 @@ Notes
 - [Android](Android/readme.md)
 - [Apache](apache/readme.md)
 - [Eclipse](eclipse/readme.md)
-- [Git](git/readme.md)
+- [Git](Git/readme.md)
 - [Linux](linux/readme.md)
 - [Mac](mac/readme.md)
 - [MySQL](mysql/readme.md)
