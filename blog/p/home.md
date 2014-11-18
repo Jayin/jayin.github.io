@@ -1,6 +1,6 @@
 Jayin Blog
 ========
-> Life is short , I use PHP、Python and Java.
+> A commit a day, keep bugs away.
 
 ![life](./img/bg.jpg)
 

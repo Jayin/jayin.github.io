@@ -2,7 +2,7 @@
 
 # [Jayin Ton](.)
 
-> I write code.
+> A commit a day, keep bugs away.
 
 - [Project](projects/index.md)
 - [Diaries](diaries/index.md)
