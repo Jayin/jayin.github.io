@@ -1,7 +1,9 @@
 Git Tips
 ===
 
-### 撤销修改
+撤销修改
+===
+
 * 如果我在修改了几行代码，发现改错了,如何撤销修改？
     1. 情况1：如果还没有添加到暂存区(`git add file`)
     那么解决办法就是
@@ -19,7 +21,9 @@ Git Tips
         git checkout -- file
     ```
     
-### 版本回退
+版本回退
+===
+
 git中，用HEAD表示当前版本，也就是最新的提交“ 3628164...882e1e0”（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
 
 
@@ -33,7 +37,9 @@ git中，用HEAD表示当前版本，也就是最新的提交“ 3628164...882e1
 
 * 提交后，用“git diff HEAD -- readme.txt”命令可以查看工作区和版本库里面最新版本的区别
 
-### 删除文件
+
+删除文件
+===
 
 在Git中，删除也是一个修改操作，我们实战一下，先添加一个新文件test.txt到Git并且提交：
 ```shell
@@ -83,7 +89,9 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论�
 git log --graph --pretty=oneline --abbrev-commit
 ```
 
-### 配置别名
+配置别名
+===
+
 
 有没有经常敲错命令？比如git status？status这个单词真心不好记。
 
@@ -106,7 +114,9 @@ $ git config --global alias.br branch
 $ git ci -m "bala bala bala..."
 ```
 
-### 分支管理策略
+分支管理策略
+===
+
 通常，合并分支时，如果可能，Git会用“Fast forward”模式，但这种模式下，删除分支后，会丢掉分支信息。
 
 如果要强制禁用“Fast forward”模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
@@ -138,16 +148,34 @@ Merge made by the 'recursive' strategy.
 ```
 因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去。
 
-### Git中的着色
+
+Git中的着色 
+===
+
 Git能够为输出到你终端的内容着色，以便你可以凭直观进行快速、简单地分析，有许多选项能供你使用以符合你的偏好。
 Git会按照你需要自动为大部分的输出加上颜色，你能明确地规定哪些需要着色以及怎样着色，设置color.ui为true来打开所有的默认终端着色。
 ```shell
 $ git config --global color.ui true 
 ```
  
+git忽略已经被提交的文件
+===
 
 
+```shell
+git rm --cached file_name
+```
 
+更新 .gitignore 忽略掉目标文件
+
+最后 
+```shell
+git commit -m "We really don't want Git to track this anymore!"
+```
+
+
+**注意**
+`git rm --cached` 删除的是追踪状态，而不是物理文件；如果你真的是彻底不想要了，你也可以直接 rm＋忽略＋提交。
 
 
 
