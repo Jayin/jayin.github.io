@@ -2,7 +2,7 @@
 ===
 >Time tells me why.
 
-- [2014-11-23-离开Coding.net](2014/2014-10-29-Leave Coding.md)
+- [2014-11-23-离开Coding.net](2014/2014-11-23-Leave Coding.md)
 - [2014-10-29-GitHub,让我有付费冲动的产品](2014/2014-10-29-Github,让我有付费冲动的产品.md)
 - [2014-09-12-Beyond the Code](2014/2014-09-12-Beyond the Code.md)
 - [2014-08-25-不炎日的夏天](2014/2014-08-25-不炎日的夏天.md)
