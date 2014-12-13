@@ -2,7 +2,7 @@ Jayin Blog
 ========
 > A commit a day, keep bugs away.
 
-![life](./img/bg2.jpg)
+![life](./img/bg3.jpg)
 
 ```
 The Zen of Python, by Tim Peters
