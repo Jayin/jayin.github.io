@@ -4,6 +4,8 @@ Jayin Blog
 
 ![life](./img/bg2.jpg)
 
+**Photo by [knewone](http://knewone.com/)**
+
 ```
 The Zen of Python, by Tim Peters
 
