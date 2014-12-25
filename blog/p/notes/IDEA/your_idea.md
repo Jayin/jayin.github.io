@@ -8,7 +8,7 @@
 
 `Preferences->Editor->Live Templates`
 
-[img](./img/notes/IDEA/idea_preference1.png)
+![img](./img/notes/IDEA/idea_preference1.png)
 
 在1处输入缩略词，在2处输入模板，在3处选择上下文(语境，也就是在哪里会提示)
 
