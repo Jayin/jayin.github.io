@@ -5,6 +5,7 @@ Tech share
 2015
 ===
 
+- [Linux小技巧](Linux/Linux_Tips.md)
 - [Python小技巧](python/Python_Tips.md)
 
 2014
