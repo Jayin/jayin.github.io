@@ -5,6 +5,7 @@ Tech share
 2015
 ===
 
+- [如何快速正确的安装 Ruby, Rails 运行环境](ruby/install_ruby.md)
 - [Linux小技巧](Linux/Linux_Tips.md)
 - [Python小技巧](python/Python_Tips.md)
 
