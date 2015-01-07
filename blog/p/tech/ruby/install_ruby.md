@@ -98,6 +98,7 @@ More
 
 RubyGems 镜像 - 淘宝网
 ===
+> http://ruby.taobao.org/
 
 ### 为什么有这个？
 
@@ -105,7 +106,7 @@ RubyGems 镜像 - 淘宝网
 
 这是一个完整 rubygems.org 镜像，你可以用此代替官方版本，同步频率目前为15分钟一次以保证尽量与官方服务同步。
 
-###如何使用？
+### 如何使用？
 
     $ gem sources --remove https://rubygems.org/
     $ gem sources -a https://ruby.taobao.org/
@@ -121,3 +122,13 @@ RubyGems 镜像 - 淘宝网
     source 'https://ruby.taobao.org/'
     gem 'rails', '4.1.0'
     ...
+
+### 修改 RVM ，改用本站作为下载源, 提高安装速度。
+
+FOR MAC
+
+    $ sed -i .bak 's!cache.ruby-lang.org/pub/ruby!ruby.taobao.org/mirrors/ruby!' $rvm_path/config/db
+
+FOR LINUX
+    
+    $ sed -i 's!cache.ruby-lang.org/pub/ruby!ruby.taobao.org/mirrors/ruby!' $rvm_path/config/db
