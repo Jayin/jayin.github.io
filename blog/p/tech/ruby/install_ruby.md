@@ -1,9 +1,9 @@
 如何快速正确的安装 Ruby, Rails 运行环境
 ---
-> 参考：
-> https://ruby-china.org/wiki/install_ruby_guide
-> http://blog.csdn.net/abbuggy/article/details/8170899
-> https://rvm.io/integration/gnome-terminal
+> 参考：  
+> https://ruby-china.org/wiki/install_ruby_guide  
+> http://blog.csdn.net/abbuggy/article/details/8170899  
+> https://rvm.io/integration/gnome-terminal  
 
 系统需求
 ---
