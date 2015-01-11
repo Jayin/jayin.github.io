@@ -12,3 +12,4 @@ Notes
 - [MySQL](mysql/readme.md)
 - [SublimeText](SublimeText/readme.md)
 - [SVN](svn/readme.md)
+- [Vim](vim/vim.md)
