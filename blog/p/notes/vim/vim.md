@@ -27,9 +27,9 @@ Tips
 * 在窗格间切换的方法 `Ctrl+w+方向键`——切换到前／下／上／后一个窗格   
   `Ctrl+w+h/j/k/l` ——同上 Ctrl+ww——依次向后切换到下一个窗格中
 
-* 在vim和talglist窗口之间切换的命令为ctrl + w
+* 在vim和talglist窗口之间切换的命令为`ctrl + w`
 
-*  关闭vim窗口中的一个：切换到你想要关闭的窗口，然后输入：bd （buffer delete）
+*  关闭vim窗口中的一个：切换到你想要关闭的窗口，然后输入`：bd`（buffer delete）
 
 * 若想在vim内部直接输入shell 命令 `:! command`
 
