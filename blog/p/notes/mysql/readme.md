@@ -1,7 +1,8 @@
 MySQL
 ===
 
- - [MySQL 备份](mysql_backup.md)
+- [MySQL 备份](mysql_backup.md)
+- [MySQL 备份2](mysql_backup2.md)
 
 
 

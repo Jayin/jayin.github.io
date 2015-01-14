@@ -1,4 +1,4 @@
-![avatar](https://avatars0.githubusercontent.com/u/2763894?v=2&amp;s=460)
+![avatar](https://avatars0.githubusercontent.com/u/2763894?v=3&s=160)
 
 # [Jayin Ton](.)
 
