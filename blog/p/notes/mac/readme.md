@@ -43,6 +43,9 @@ Nice App
 ```shell
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 ```
+相关文章:  
+[终极 Shell](http://macshuo.com/?p=676)
+[zsh 使用 安装 ](http://blog.csdn.net/housansan/article/details/19302371)
 
 ### Mou
 
