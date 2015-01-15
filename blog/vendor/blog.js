@@ -34,10 +34,10 @@
          * @param  baseUrl 基准url
          */
     function load(selector, file_path, isSidebar, baseUrl) {
-        baseUrl = baseUrl || blog_base;
+        baseUrl   = baseUrl || blog_base;
         isSidebar = isSidebar || false;
 
-        var p_url = baseUrl + file_path;
+        p_url = baseUrl + file_path;
 
         console.log("load-->" + p_url);
         console.log(blog_base);
@@ -80,10 +80,16 @@
             if (err.status === 404) {
                 console.log('404-->' + '/' + app_name + '/');
                 console.log($._c);
+                if(file_path ==='footer.md'){
+                    console.log('没有找到footer.md! 建议在p/目录下建立footer.md 文件来添加底部信息！');
+                    return;
+                }
                 load('#main-page', '404.md', false, '/' + app_name + '/');
             }
         });
     }
+
+
 
     function read_config(callback) {
         $.getJSON('config.json', {}, function(data) {
@@ -102,6 +108,7 @@
         read_config(function() {
             //加载侧边菜单栏
             load('#sidebar-page', 'sidebar.md', true);
+            load('#main-page-footer','footer.md');
             //加载主内容页
             if(location.search.indexOf('&') !== -1){
                  cur_md_path = location.search.slice(1,  location.search.indexOf('&'));
