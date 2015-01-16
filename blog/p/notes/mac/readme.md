@@ -36,6 +36,17 @@ Nice App
   包管理工具可以让你安装和更新程序变得更方便，目前在 OS X 系统中最受欢迎的包管理工具是 [Homebrew](http://brew.sh/).
 
 
+### Shell: zsh
+
+据说是最牛逼的shell,OS X已经内置，可是，有更棒的配置[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)    
+安装:
+```shell
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+```
+相关文章:  
+[终极 Shell](http://macshuo.com/?p=676)
+[zsh 使用 安装 ](http://blog.csdn.net/housansan/article/details/19302371)
+
 ### Mou
 
   Markdown 编辑器，国人出品
