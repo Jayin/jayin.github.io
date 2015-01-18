@@ -19,6 +19,12 @@ Ruby也可以一行解决:
 ruby -run -e httpd . -p 8888
 ```
 
+PHP也可以
+```shell
+php -S localhost:8000
+php -S localhost:8000 -t /data/www
+```
+
 ###  字符串格式化输出
 
 ```python
