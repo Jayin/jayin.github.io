@@ -97,10 +97,14 @@ blockquote {
     top: -9999px;
     left: -9999px;
 }
-.main-page-footer {
+#main-page-footer {
     text-align:  center;
-    padding-top: 6%;
-    padding-bottom:1px;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom:4px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 14px;
 }
 @media (max-width: 480px){
   .sidebar-inner li {
