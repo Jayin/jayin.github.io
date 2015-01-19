@@ -14,6 +14,16 @@ $ python -m SimpleHTTPServer 8000
 
 8000为默认的端口,浏览器起输入`http://localhost:8000/`，能看到满满都是爱吗？
 
+Ruby也可以一行解决:
+```shell
+ruby -run -e httpd . -p 8888
+```
+
+PHP也可以
+```shell
+php -S localhost:8000
+php -S localhost:8000 -t /data/www
+```
 
 ###  字符串格式化输出
 
