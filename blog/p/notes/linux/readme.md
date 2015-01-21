@@ -2,12 +2,11 @@ Linux
 ===
 
 - [install-Java](install-Java.md)
-- [install-PyCharm.md](install-PyCharm.md) 
-- [mysql-operation.md](mysql-operation.md) 
-- [ubuntu-pingyin.md](ubuntu-pingyin.md) 
-- [useful-plugin.md](useful-plugin.md)
+- [install-PyCharm](install-PyCharm.md) 
+- [linux下MySql操作](mysql-operation.md) 
+- [Linux 插件&App](useful-plugin.md)
 
-＃＃＃ 使用terminator作为终端
+### 使用terminator作为终端
 
 安装terminator
 

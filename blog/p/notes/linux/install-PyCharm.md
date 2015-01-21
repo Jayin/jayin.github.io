@@ -1,3 +1,6 @@
+PyCharm
+---
+
 几经周折，终于填了安装上PyCharm，
 老是出现xxx/bin/java not found，明明我配置好的为啥还是not found? 
 

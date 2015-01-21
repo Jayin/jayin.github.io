@@ -1,4 +1,5 @@
-### Linux 下安装配置 JDK7
+Linux 下安装配置 JDK7
+---
 
 自从从Oracle收购Sun近三年来，已经有很多变化。早在8月，甲骨文将“Operating System Distributor License for Java”许可证终结，这意味着第三方将不可以依据这一许可分发他们的软件包。
 　　因此Ubuntu Linux已经开始禁用所有机器上的Oracle JDK浏览器插件，并很快会从档案中删除软件包。
@@ -25,13 +26,16 @@ sudo mv jdk1.7.0_05/ jdk7
 
 ### 配置环境变量
 
+```shell
 [root@nhserver1 ~]# vim /etc/profile
-打开文件后，在export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE INPUTRC上面添加如下：
+```
 
+打开文件后，在export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE INPUTRC上面添加如下：  
+```
 export JAVA_HOME=/usr/java/jdk1.7.0_05
 export PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin
 export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH 
-
+```
 
 ### 配置默认JDK
 由于一些Linux的发行版中已经存在默认的JDK，如OpenJDK等。所以为了使得我们刚才安装好的JDK版本能成为默认的JDK版本，我们还要进行下面的配置。
