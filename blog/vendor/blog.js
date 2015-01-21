@@ -75,9 +75,14 @@
                 var mainTitle = $('#main-page').find('h1, h2, h3, h4, h5, h6').first().text();
                 $('title').text(mainTitle);
             }
-            //sidebar-avatar
+            //sidebar spec
             if (isSidebar){
+                //round avatar
                 $(selector).find('img').first().addClass('avatar');
+                //add animation in item
+                $.each($(selector).find('li'),function(index,item){
+                     $(item).addClass('sidebar-item');
+                });
             }
 
         }).fail(function(err) {

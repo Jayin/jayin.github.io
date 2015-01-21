@@ -110,6 +110,15 @@ blockquote {
    border-radius: 90px;
    padding: 3px;
 }
+.sidebar-item{
+    transition:margin-left 0.5s;
+    -moz-transition:margin-left 0.5s;  
+    -webkit-transition:margin-left 0.5s;  
+    -o-transition:margin-left 0.5s;
+}
+.sidebar-item:hover{
+    margin-left:13px;
+}
 @media (max-width: 480px){
   .sidebar-inner li {
         display: inline-block;
