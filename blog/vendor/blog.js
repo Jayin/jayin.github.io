@@ -75,6 +75,10 @@
                 var mainTitle = $('#main-page').find('h1, h2, h3, h4, h5, h6').first().text();
                 $('title').text(mainTitle);
             }
+            //sidebar-avatar
+            if (isSidebar){
+                $(selector).find('img').first().addClass('avatar');
+            }
 
         }).fail(function(err) {
             if (err.status === 404) {
