@@ -1,27 +1,38 @@
+RESTful API 设计指南
+-------------------
+>原文网址：http://www.ruanyifeng.com/blog/2014/05/restful_api.html
+
 网络应用程序，分为前端和后端两个部分。当前的发展趋势，就是前端设备层出不穷（手机、平板、桌面电脑、其他专用设备......）。
 
 因此，必须有一种统一的机制，方便不同的前端设备与后端进行通信。这导致API构架的流行，甚至出现"API First"的设计思想。RESTful API是目前比较成熟的一套互联网应用程序的API设计理论。我以前写过一篇《理解RESTful架构》，探讨如何理解这个概念。
 
 今天，我将介绍RESTful API的设计细节，探讨如何设计一套合理、好用的API。我的主要参考资料是这篇《Principles of good RESTful API Design》。
+
 ![RESTful API](http://image.beekka.com/blog/2014/bg2014052201.png)
+
 ### 一、协议
+
 API与用户的通信协议，总是使用HTTPs协议。
 
 ### 二、域名
+
 应该尽量将API部署在专用域名之下。
 
 https://api.example.com
+
 如果确定API很简单，不会有进一步扩展，可以考虑放在主域名下。
 
 https://example.org/api/
 
 ### 三、版本（Versioning）
+
 应该将API的版本号放入URL。
 
 https://api.example.com/v1/
 另一种做法是，将版本号放在HTTP头信息中，但不如放入URL方便和直观。
 
 ### 四、路径（Endpoint）
+
 路径又称"终点"（endpoint），表示API的具体网址。
 在RESTful架构中，每个网址代表一种资源（resource），所以网址中不能有动词，只能有名词，而且所用的名词往往与数据库的表格名对应。一般来说，数据库中的表都是同种记录的"集合"（collection），所以API中的名词也应该使用复数。
 举例来说，有一个API提供动物园（zoo）的信息，还包括各种动物和雇员的信息，则它的路径应该设计成下面这样。
@@ -31,6 +42,7 @@ https://api.example.com/v1/animals
 https://api.example.com/v1/employees
 ```
 ### 五、HTTP动词
+
 对于资源的具体操作类型，由HTTP动词表示。
 常用的HTTP动词有下面五个（括号里是对应的SQL命令）。
 ```
@@ -56,7 +68,9 @@ DELETE /zoos/ID：删除某个动物园
 GET /zoos/ID/animals：列出某个指定动物园的所有动物
 DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物
 ```
+
 ### 六、过滤信息（Filtering）
+
 如果记录数量很多，服务器不可能都将它们返回给用户。API应该提供参数，过滤返回结果。
 下面是一些常见的参数。
 ```
@@ -66,7 +80,9 @@ DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物
 ?animaltypeid=1：指定筛选条件
 参数的设计允许存在冗余，即允许API路径和URL参数偶尔有重复。比如，GET /zoo/ID/animals 与 GET /animals?zoo_id=ID 的含义是相同的。
 ```
+
 ### 七、状态码（Status Codes）
+
 服务器向用户返回的状态码和提示信息，常见的有以下一些（方括号中是该状态码对应的HTTP动词）。
 ```
 200 OK - [GET]：服务器成功返回用户请求的数据，该操作是幂等的（Idempotent）。
@@ -79,6 +95,7 @@ DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物
 状态码的完全列表参见这里。
 
 ### 八、返回结果
+
 针对不同操作，服务器向用户返回的结果应该符合以下规范。
 ```
 GET /collection：返回资源对象的列表（数组）
@@ -89,6 +106,7 @@ PATCH /collection/resource：返回完整的资源对象
 DELETE /collection/resource：返回一个空文档
 ```
 ### 九、Hypermedia API
+
 RESTful API最好做到Hypermedia，即返回结果中提供链接，连向其他API方法，使得用户不查文档，也知道下一步应该做什么。
 比如，当用户向api.example.com的根目录发出请求，会得到这样一个文档。
 ```json
@@ -117,11 +135,10 @@ Hypermedia API的设计被称为HATEOAS。Github的API就是这种设计，访�
 上面代码表示，服务器给出了提示信息，以及文档的网址。
 
 ### 十、其他
+
 （1）API的身份认证应该使用OAuth 2.0框架。
 （2）服务器返回的数据格式，应该尽量使用JSON，避免使用XML。
 （完）
 
-原文网址：http://www.ruanyifeng.com/blog/2014/05/restful_api.html
 
-以下是补充
-===
+
