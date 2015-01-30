@@ -34,7 +34,7 @@
          * @param  baseUrl 基准url
          */
     function load(selector, file_path, isSidebar, baseUrl) {
-        baseUrl   = baseUrl || blog_base;
+        baseUrl = baseUrl || blog_base;
         isSidebar = isSidebar || false;
 
         p_url = baseUrl + file_path;
@@ -66,22 +66,51 @@
                 }
 
                 //main page
-                if (!isAbsolute(url) && !isSidebar && isMarkdownFile(url) ) {
-                    $element.attr('href', '?' + getPageBase(cur_md_path) + url);
+                if (!isAbsolute(url) && !isSidebar && isMarkdownFile(url)) {
+                    var new_url = getPageBase(cur_md_path);
+                    //上一级目录
+                    if (url.indexOf('../') == 0) {
+                        new_url = new_url.substring(0, new_url.length - 1);
+                        if (new_url.indexOf('/') != -1) {
+                            new_url = new_url.slice(0, new_url.lastIndexOf('/') + 1) + url.slice(3, url.length);
+                        } else {
+                            new_url = url.slice(3, url.length);
+                        }
+                    } else if (url.indexOf('__ROOT__') == 0) {
+                        //文章根目录`p/`下
+                        new_url = url.replace('__ROOT__/', '');
+                    } else {
+                        //当前目录
+                        new_url = new_url + url.replace('./', '');
+                    }
+                    $element.attr('href', '?' + new_url);
                 }
             });
-            //title
+            //main-page
             if (!isSidebar) {
+                //change title
                 var mainTitle = $('#main-page').find('h1, h2, h3, h4, h5, h6').first().text();
                 $('title').text(mainTitle);
+
+                //图片位置
+                $.each($(selector).find('img'), function(index, item) {
+                    var alt = $(item).attr('alt') || '';
+                    if (alt.indexOf('|left') != -1) {
+                        $(item).addClass('img-left');
+                    } else if (alt.indexOf('|right') != -1) {
+                        $(item).addClass('img-right');
+                    } else {
+                        $(item).addClass('img-center');
+                    }
+                });
             }
-            //sidebar spec
-            if (isSidebar){
+            //sidebar
+            if (isSidebar) {
                 //round avatar
                 $(selector).find('img').first().addClass('avatar');
                 //add animation in item
-                $.each($(selector).find('li'),function(index,item){
-                     $(item).addClass('sidebar-item');
+                $.each($(selector).find('li'), function(index, item) {
+                    $(item).addClass('sidebar-item');
                 });
             }
 
@@ -89,7 +118,7 @@
             if (err.status === 404) {
                 console.log('404-->' + '/' + app_name + '/');
                 console.log($._c);
-                if(file_path ==='footer.md'){
+                if (file_path === 'footer.md') {
                     console.log('没有找到footer.md! 建议在p/目录下建立footer.md 文件来添加底部信息！');
                     return;
                 }
@@ -117,13 +146,13 @@
         read_config(function() {
             //加载侧边菜单栏
             load('#sidebar-page', 'sidebar.md', true);
-            load('#main-page-footer','footer.md');
+            load('#main-page-footer', 'footer.md');
             //加载主内容页
-            if(location.search.indexOf('&') !== -1){
-                 cur_md_path = location.search.slice(1,  location.search.indexOf('&'));
-             }else{
-                 cur_md_path = location.search.slice(1,  location.search.length);
-             }
+            if (location.search.indexOf('&') !== -1) {
+                cur_md_path = location.search.slice(1, location.search.indexOf('&'));
+            } else {
+                cur_md_path = location.search.slice(1, location.search.length);
+            }
             if (cur_md_path === '') {
                 load('#main-page', 'home.md');
                 console.log("load main~");

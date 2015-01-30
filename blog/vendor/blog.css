@@ -106,6 +106,18 @@ blockquote {
     color: #777;
     font-size: 14px;
 }
+.img-left{
+    display: block;
+    margin: 15px auto 15px 0px;
+}
+.img-center{
+    display: block;
+    margin: 15px auto 15px auto;
+}
+.img-right{
+    display: block;
+    margin: 15px 0px 15px auto;
+}
 .avatar {
    border-radius: 90px;
    padding: 3px;
