@@ -1,6 +1,7 @@
 Linux
 ===
 
+- [LAMP环境搭建](install-LAMP.md)
 - [install-Java](install-Java.md)
 - [install-PyCharm](install-PyCharm.md) 
 - [linux下MySql操作](mysql-operation.md) 
