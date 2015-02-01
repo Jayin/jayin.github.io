@@ -1,4 +1,4 @@
-离开coding.net
+放弃使用coding.net
 ===
 > 因为软件大赛的原因,我们尝试使用coding.net
 
