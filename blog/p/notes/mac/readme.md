@@ -19,7 +19,7 @@ Mac OS X
 
 ### 启用fn功能键
 
-![](./img/notes/mac/fn.png)
+![](__IMG__/notes/mac/fn.png)
 
 
 Nice App
@@ -28,7 +28,7 @@ Nice App
 ### Dash-API查找
 
   Dash是mac系统下最好用的api查找工具
-![](./img/notes/mac/dash.png)
+![](__IMG__/notes/mac/dash.png)
 
 
 ### Homebrew

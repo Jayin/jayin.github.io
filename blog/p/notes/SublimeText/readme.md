@@ -68,12 +68,12 @@ window 下还是要小配置一下.
 ### DocBlockr
 输入`/**`再输入一个Tab键or空格立即展开注释
 
-![DocBlockr](./img/notes/sublimetext001.png)
+![DocBlockr](__IMG__/notes/sublimetext001.png)
 
 ### AutoFileName
 自动填充文件名
 
-![DocBlockr](./img/notes/sublimetext002.png)
+![DocBlockr](__IMG__/notes/sublimetext002.png)
 
 
 

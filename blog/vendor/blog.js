@@ -1,6 +1,8 @@
 (function($) {
     var app_name = '';
     var blog_base = '';
+    var img_root = 'img';
+    var markdown_root = 'p';
     //当前请求的markdown文件
     var cur_md_path = '';
     /*是否是http:// 如果是，那么这是资源文件,如果否，说明这是要处理的a标签*/
@@ -39,19 +41,17 @@
 
         p_url = baseUrl + file_path;
 
-        console.log("load-->" + p_url);
-        console.log(blog_base);
-        console.log(app_name);
         $.get(p_url, function(data) {
             marked.setOptions({
                 highlight: function(code) {
                     return hljs.highlightAuto(code).value;
                 }
             });
-            $(selector).html(marked(data));
+            var _selector = $(selector);
+            _selector.html(marked(data));
 
             //处理所有scr
-            $(selector).find('[href]').each(function() {
+            _selector.find('[href]').each(function() {
                 var $element = $(this);
                 var url = $element.attr('href');
 
@@ -76,9 +76,9 @@
                         } else {
                             new_url = url.slice(3, url.length);
                         }
-                    } else if (url.indexOf('__ROOT__') == 0) {
+                    } else if (url.indexOf('__P__') == 0) {
                         //文章根目录`p/`下
-                        new_url = url.replace('__ROOT__/', '');
+                        new_url = url.replace('__P__/', '');
                     } else {
                         //当前目录
                         new_url = new_url + url.replace('./', '');
@@ -93,7 +93,7 @@
                 $('title').text(mainTitle);
 
                 //图片位置
-                $.each($(selector).find('img'), function(index, item) {
+                $.each(_selector.find('img'), function(index, item) {
                     var alt = $(item).attr('alt') || '';
                     if (alt.indexOf('|left') != -1) {
                         $(item).addClass('img-left');
@@ -107,17 +107,22 @@
             //sidebar
             if (isSidebar) {
                 //round avatar
-                $(selector).find('img').first().addClass('avatar');
+                _selector.find('img').first().addClass('avatar');
                 //add animation in item
-                $.each($(selector).find('li'), function(index, item) {
+                $.each(_selector.find('li'), function(index, item) {
                     $(item).addClass('sidebar-item');
                 });
             }
+            //处理图片链接
+            $.each(_selector.find('img'), function(index, item) {
+                $e = $(item);
+                if ($e.attr('src').indexOf('__IMG__') == 0) {
+                    $e.attr('src', $e.attr('src').replace('__IMG__', img_root));
+                }
+            });
 
         }).fail(function(err) {
             if (err.status === 404) {
-                console.log('404-->' + '/' + app_name + '/');
-                console.log($._c);
                 if (file_path === 'footer.md') {
                     console.log('没有找到footer.md! 建议在p/目录下建立footer.md 文件来添加底部信息！');
                     return;
@@ -127,14 +132,12 @@
         });
     }
 
-
-
     function read_config(callback) {
         $.getJSON('config.json', {}, function(data) {
             app_name = data.app_name || app_name;
-            blog_base = '/' + app_name + '/p/';
-            console.log('---read config');
-            console.log(app_name + ' : ' + blog_base);
+            img_root = data.img_root || img_root;
+            markdown_root = data.markdown_root || markdown_root;
+            blog_base = '/' + app_name + '/' + markdown_root + '/';
             callback();
         }).fail(function(err) {
             alert('读取配置有误');
@@ -142,7 +145,6 @@
     }
 
     function main() {
-
         read_config(function() {
             //加载侧边菜单栏
             load('#sidebar-page', 'sidebar.md', true);
@@ -155,9 +157,6 @@
             }
             if (cur_md_path === '') {
                 load('#main-page', 'home.md');
-                console.log("load main~");
-                //多说评论,若想不在首页显示评论框 那么：取消这一句注释
-                //$('.ds-thread').removeClass('ds-thread');
             } else {
                 load('#main-page', cur_md_path);
             }
@@ -165,6 +164,5 @@
     }
 
     main();
-
-
+    
 })(jQuery);
