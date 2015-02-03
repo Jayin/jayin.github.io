@@ -1,54 +1,34 @@
 关于
-===
+----
 
-> Life is short , I use PHP、Python and Java.
+欢迎到访我的博客,本博客主要用来记录我个人的点滴，既有技术也有日常生活吐槽。
+
+个人简介
+------
+
+- 唐杰英 大三 计算机科学与技术@五邑大学 现居江门
+- 喜欢coding，GitHub中毒用户,关注web
+- 熟悉Java/PHP，掌握Python,可以查看我的[项目](__P__/projects/index.md)
+- 曾自发组织3次[校内开发者沙龙](http://wuyiuniversity.github.io/)
+- 在[袂卓工作室](http://meizhuo.github.io/)负责Android组
+- 2年综合测评居专业第一，曾获奖项请看:[校园之星评比微博内容](2014/2014-05-06-校园之星评比微博内容.md)
 
 
-坐标 :广东江门 
-
-新浪微博 : [@Jayin_Ton](http://weibo.com/tjy273942569) 
-
-Github :[@Jayin](https://github.com/Jayin) 
-
-
-基本信息
-===
-* 唐杰英 大三
-* Phone: 15088132354
-* Email: tonjayin@gmail.com
-* 个人博客: http://jayin.github.io/
-*  微  博 ：http://weibo.com/tjy273942569
-*  GitHub : https://github.com/Jayin
-
-常用语言:Java/Python/PHP
-个人认为擅长:Android > PHP
-Python并没有在任何产品中实际使用，只是作为工具语言去使用
 
 实习经历
-===
-就在刚过去大二暑假，我在一江门创业公司做外贸商城的开发,负责后台(主)/前端(助攻)。
+------
+大二暑假，我在一江门创业公司做外贸商城的开发,负责后台(主)/前端(助攻)。
 因为实习的需要,我才学习PHP,我们使用开源的商店系统[OpenCart](https://github.com/opencart/opencart)进行二次开发(而没有采用ecshop)，
 我也给opencart提过3次PR(2次合并,1次手动合并)
 
- 
+联系我
+----
 
-项目
-===
-* [ETips](http://etips.github.io/) 
->大一暑假闭关独立开发五邑大学校园助手Android客户端，人生第一滴血(代码渣渣)
->相关报道:http://campus.baidu.com/news/detail/766
+联系  | 方式
+--------|-----
+Email   | [tonjayin@gmail.com](tonjayin@gmail.com)
+GitHub  | [@Jayin](https://github.com/Jayin)
+知乎     | [@唐杰英](http://www.zhihu.com/people/jayinton)
+新浪微博  | [@Jayin_Ton](http://weibo.com/tjy273942569)
 
-* [EManual](http://emanual.github.io/)
->安卓应用 Java学习助手 主导开发
 
-* [SiyuanGroup](https://github.com/Jayin/SiyuanGroup)
-> 校友录Android客户端 主导开发  
-> [后台](https://github.com/node-fun/siyuan)也开源了  
-> 这是一次由我们学生主导整个产品的开发的产品，虽然最后没得满意的回报  
-
-* 更多可以查看我的GitHub，每天我做的东西都会提交GitHub,算是半个GitHub重度用户
-
-More
-===
-* 曾自发组织2次校内开发者沙龙
-* 在袂卓工作室呆了3年
