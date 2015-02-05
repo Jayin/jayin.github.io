@@ -32,4 +32,11 @@ nohup python -m SimpleHTTPServer &
 
 ```
 
-查看进程看看效果
+### 查找指定文件并删除
+
+我在整理EManual的时候遇到这样的问题:`markdown/`有很多文件，文件里面还嵌套很多文件，要删除这目录下所有`*.json`文件，
+但是手动弄了大概1/3，发现有点麻烦，不如使用一条命令来解放双手: 
+
+```shell
+find . -name "*.json" | xargs rm -f
+```
