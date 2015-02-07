@@ -86,27 +86,21 @@ setup(
 
 我个人是习惯用前者，因为wheel打包需要额外考虑下有无用到py2,3的兼容性,是否有使用额外扩展，感觉复杂了。
 
-- step 1 打包
-```shell
-cd path/to/you project/
-python setup.py sdist
-```
 
-- step 2 注册该python包
+- step 1 注册/识别该python包
 ```
 python setup.py register
 ```
 
 注意   
 - 他会提示你登录or注册一个PyPI帐号
-- 如果已经注册了这个包 则跳过这步
+- 登陆后，他会问你是否保存登陆信息，方便起见，选择Y
+- 如果已经登陆过，请忽略这一步
 
 
-- step 3 上传打包好的项目
+- step 2 上传打包好的项目
 ```
-python setup.py upload //上传
-//or
-python setup.py sdist upload //推荐，再次打包并上传
+python setup.py sdist upload //推荐，打包并上传
 //or
 python setup.py sdist bdist_wheel upload //所有方式一并打包上传
 ```
