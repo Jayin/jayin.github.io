@@ -155,6 +155,10 @@
             } else {
                 cur_md_path = location.search.slice(1, location.search.length);
             }
+            //部分服务器会在后面追加'/',例如：?a/b/cxx.md/
+            if(cur_md_path.charAt(cur_md_path.length - 1) === '/'){
+                cur_md_path = cur_md_path.slice(0, location.search.length - 2);
+            }
             if (cur_md_path === '') {
                 load('#main-page', 'home.md');
             } else {
