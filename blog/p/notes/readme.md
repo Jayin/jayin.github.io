@@ -13,3 +13,4 @@ Notes
 - [SublimeText](SublimeText/readme.md)
 - [SVN](svn/readme.md)
 - [Vim](vim/vim.md)
+- [PHP](php/readme.md)
