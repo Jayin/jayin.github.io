@@ -12,8 +12,8 @@ Android
 >大一暑假闭关独立开发五邑大学校园助手Android客户端，人生第一滴血(代码渣渣)
 >相关报道:http://campus.baidu.com/news/detail/766
 
-* [EManual](http://emanual.github.io/)
->安卓应用 Java学习助手 主导开发
+* [EManual](http://www.iemanual.com/)
+>前身为[Java学习助手](http://emanual.github.io/),v2.0后改为编程助手， 独立开发
 
 * [SiyuanGroup](https://github.com/Jayin/SiyuanGroup)
 > 校友录Android客户端 主导开发
