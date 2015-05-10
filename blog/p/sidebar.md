@@ -1,4 +1,4 @@
-![avatar](https://avatars0.githubusercontent.com/u/2763894?v=3&s=160)
+![avatar](__IMG__/avatar.jpeg)
 
 # [Jayin Ton](.)
 
