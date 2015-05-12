@@ -159,7 +159,7 @@
             if(cur_md_path.charAt(cur_md_path.length - 1) === '/'){
                 cur_md_path = cur_md_path.slice(0, location.search.length - 2);
             }
-            if (cur_md_path === '') {
+            if (cur_md_path === '' || !isMarkdownFile(cur_md_path)) {
                 load('#main-page', 'home.md');
             } else {
                 load('#main-page', cur_md_path);
