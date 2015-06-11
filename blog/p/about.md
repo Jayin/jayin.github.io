@@ -28,7 +28,6 @@
 --------|-----
 Email   | [tonjayin@gmail.com](tonjayin@gmail.com)
 GitHub  | [@Jayin](https://github.com/Jayin)
-知乎     | [@唐杰英](http://www.zhihu.com/people/jayinton)
 新浪微博  | [@Jayin_Ton](http://weibo.com/tjy273942569)
 
 
