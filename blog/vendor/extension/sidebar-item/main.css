@@ -1,0 +1,10 @@
+.sidebar-item {
+    transition: margin-left 0.5s;
+    -moz-transition: margin-left 0.5s;
+    -webkit-transition: margin-left 0.5s;
+    -o-transition: margin-left 0.5s;
+}
+
+.sidebar-item:hover {
+    margin-left: 13px;
+}

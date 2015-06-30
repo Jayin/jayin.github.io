@@ -8,6 +8,8 @@ Description
 
 一个hover效果，鼠标移动到图片会有上浮并带有阴影
 
+![avater](./gif2.gif)
+
 
 Install
 -------

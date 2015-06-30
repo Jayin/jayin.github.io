@@ -1,0 +1,13 @@
+.main-page.markdown-body {
+    animation-duration: 3.8s;
+    animation-name: fadein;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
