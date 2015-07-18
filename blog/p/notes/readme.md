@@ -2,6 +2,7 @@ Notes
 ===
 > Good memory as bad written.
 
+- [前端笔记](frontend/index.md)
 - [Android](Android/readme.md)
 - [Apache](apache/readme.md)
 - [IDEA](IDEA/readme.md)
