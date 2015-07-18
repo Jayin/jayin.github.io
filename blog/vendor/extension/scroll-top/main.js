@@ -1,0 +1,1 @@
+!function(o){"use strict";var t=o(".btn-scrolltop"),i=o(window),c=o(".sidebar").height()/2,s=!1;t.on("click",function(){o(this).animate({bottom:"50%",opacity:.1},300,function(){o(this).hide(),o(this).css("bottom","10%"),o(this).css("opacity","1"),s=!0,o("body").animate({scrollTop:0},800,function(){s=!1})})}),i.scroll(function(){s||(i.scrollTop()>=c?t.show():t.hide())})}(jQuery);

@@ -40,12 +40,50 @@
         <div class="main-inner">
             <!-- 主内容 -->
             <div class="main-page markdown-body" id="main-page"></div>
+            
+            <!-- disqus START -->
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES * * */
+                var disqus_shortname = 'jayinton';
+                
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            <!-- disqus END -->
+
             <!-- 底部 -->
             <div class="main-page markdown-body" id="main-page-footer"></div>
         </div>
     </div>
-
+    <!-- extension: scroll top-->
+    <div class="btn-scrolltop" style="display: none">
+        <img src="./vendor/extension/scroll-top/images/stay.gif" alt="">    
+    </div>
 </body>
+
+<script src="vendor/jquery-1.11.1.min.js"></script>
+
+<!-- extensions START-->
+<script src="vendor/extension/disqus-visibility/main.js"></script> 
+
+<!-- scroll top -->
+<link rel="stylesheet" href="vendor/extension/scroll-top/main.css">
+<script src="vendor/extension/scroll-top/main.js"></script> 
+
+<!-- slide backgournd -->
+<link rel="stylesheet" href="vendor/extension/sidebar-background/main.css">
+<script src="vendor/extension/sidebar-background/main.js"></script> 
+
+<!-- load-progress -->
+<link rel="stylesheet" href="vendor/extension/load-progress/dist/main.css">
+<script src="vendor/extension/load-progress/dist/main.js"></script> 
+<!-- extensions END-->
 
 <!-- core.js -->
 <script src="vendor/core.js"></script> 

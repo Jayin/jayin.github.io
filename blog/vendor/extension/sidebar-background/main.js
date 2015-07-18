@@ -1,0 +1,1 @@
+!function(e){"use strict";e(window).on("loaded-sidebar-page",function(){var a=e(".sidebar");a.css("background-image","url('https://unsplash.it/{w}/{h}/?random&gravity=center')".replace("{w}",a.width()).replace("{h}",a.height()))})}(jQuery);
