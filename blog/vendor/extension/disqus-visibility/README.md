@@ -14,9 +14,9 @@ dispus-visibility
 ```
 <script src="vendor/jquery-1.11.1.min.js"></script>
 <!-- 在jquery 和core.js之间插入 -->
-<script src="vendor/extension/dispus-visibility/main.js"></script> 
+<script src="vendor/extension/dispus-visibility/main.js"></script>
 <!-- core.js -->
-<script src="vendor/core.js"></script> 
+<script src="vendor/core.js"></script>
 ```
 
 ### 设置白名单
@@ -26,10 +26,11 @@ dispus-visibility
 支持正则表达式
 
 ```javascript
-var white_list = [
+var white_list = [ //默认大小写不敏感，也就是HOME.md也是白名单内
     '', //首页
     'home.md',
-    'about.md'
+    'about.md',
+    'README.md'
 ]
 ```
 
