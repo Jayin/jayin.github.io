@@ -5,6 +5,7 @@ Timeline
 2015
 ----
 
+- [2015-08-13-根据两点经纬度计算距离](__P__/notes/frontend/获取地理位置并计算经纬度间的距离.md)
 - [2015-07-07-The next station](2015/2015-07-07-The next station.md)
 - [2015-06-30-用npm管理你的命令](__P__/tech/JavaScript/2015-06-30-用npm管理你的命令.md)
 - [2015-06-22-JavaScript中的全局变量与局部变量](__P__/tech/JavaScript/2015-06-22-JavaScript中的全局变量与局部变量.md)
