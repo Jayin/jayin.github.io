@@ -3,6 +3,7 @@ Linux
 
 - [LAMP环境搭建](install-LAMP.md)
 - [install-Java](install-Java.md)
+- [install-maven](install-maven.md)
 - [install-PyCharm](install-PyCharm.md) 
 - [linux下MySql操作](mysql-operation.md) 
 - [Linux 插件&App](useful-plugin.md)
