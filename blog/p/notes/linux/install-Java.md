@@ -27,7 +27,7 @@ sudo mv jdk1.7.0_05/ jdk7
 ### 配置环境变量
 
 ```shell
-[root@nhserver1 ~]# vim /etc/profile
+vim /etc/profile
 ```
 
 打开文件后，在export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE INPUTRC上面添加如下：  
@@ -36,8 +36,20 @@ export JAVA_HOME=/usr/java/jdk1.7.0_05
 export PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin
 export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH 
 ```
+### 让打开shell自动导入Java PATH
 
-### 配置默认JDK
+以默认的bash(~/.bashrc)为例，如果是zsh(~/.zshrc)
+
+```shell
+[sudo] vim ~/.bashrc
+```
+
+在文件尾部输入
+```
+source /etc/profile
+```
+
+### 配置默认JDK(optional)
 由于一些Linux的发行版中已经存在默认的JDK，如OpenJDK等。所以为了使得我们刚才安装好的JDK版本能成为默认的JDK版本，我们还要进行下面的配置。
 执行下面的命令：
 ```shell
@@ -61,3 +73,5 @@ Java(TM) SE Runtime Environment (build 1.7.0_05-b05)
 Java HotSpot(TM) Server VM (build 23.1-b03, mixed mode)
 ```
 这表示java命令已经可以运行了。
+
+
