@@ -23,3 +23,6 @@
 
 [faker.js](https://github.com/Marak/faker.js)
 > 快速、批量生成虚假(测试)的数据
+
+[shake.js](https://github.com/alexgibson/shake.js)
+> 封装DeviceMotionEvent，抽象成shake(摇动)事件，让你专注业务逻辑的实现
