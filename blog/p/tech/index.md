@@ -19,6 +19,7 @@ Tech share
 - [HTTP API 设计指南](import/http/HTTP_API_design_guide.md)
 - [RESTful API 设计指南](import/http/RESTFUL_API_design_guide.md)
 - [RESTful API 设计最佳实践](import/http/RESTFUL_API_best_practice.md)
+- [Rate limiting 的作用和常见方式](import/http/rate-limiting.md)
 
 
 2014
@@ -26,3 +27,4 @@ Tech share
 
 - [使用PHP得到所有的HTTP请求头](php/read_any_request_header_in_PHP.md)
 - [WAMP安装之msvcr100.dll丢失问题](2014/2014-11-18-WAMP_setup_error.md)
+
