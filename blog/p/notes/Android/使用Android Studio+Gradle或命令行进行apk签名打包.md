@@ -1,9 +1,9 @@
 ## 使用Android Studio+Gradle进行apk签名打包
 
 参考文章:
-http://blog.csdn.net/jjwwmlp456/article/details/44942109
-https://developer.android.com/tools/publishing/app-signing.html
-http://www.trinea.cn/android/android-view-signatures/
+- http://blog.csdn.net/jjwwmlp456/article/details/44942109
+- https://developer.android.com/tools/publishing/app-signing.html
+- http://www.trinea.cn/android/android-view-signatures/
 
 1. 默认为debug mode，使用的签名文件在： `$HOME/.android/debug.keystore`
 
@@ -82,7 +82,7 @@ http://www.trinea.cn/android/android-view-signatures/
 1. 某个keystore签名的应用（会要求输入签名密码）
 
  ```
- $ keytool -list -keystore path/to/your.keystore(jks)
+ $ keytool -list -v -keystore path/to/your.keystore(jks)
  ```
 
 2. 查看三方应用或是系统应用签名
