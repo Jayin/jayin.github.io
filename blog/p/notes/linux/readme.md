@@ -1,6 +1,7 @@
 Linux
 ===
 
+- [linuxbrew](linuxbrew.md)
 - [LAMP环境搭建](install-LAMP.md)
 - [install-Java](install-Java.md)
 - [install-maven](install-maven.md)
