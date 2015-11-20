@@ -1,6 +1,7 @@
 Linux
 ===
 
+- [在ubuntu上搭建PHP7+Nginx](在ubuntu上搭建PHP7+Nginx.md)
 - [linuxbrew](linuxbrew.md)
 - [LAMP环境搭建](install-LAMP.md)
 - [install-Java](install-Java.md)
