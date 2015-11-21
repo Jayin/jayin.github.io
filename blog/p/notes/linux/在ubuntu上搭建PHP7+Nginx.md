@@ -7,7 +7,7 @@
 源码安装PHP这些从网上搜都一大堆，这里outline一下大概的步骤:
 
 1. 安装依赖
-2. ./configure --prefix=/usr/local/php70 --enable-XXX --with-XXX
+2. ./configure --prefix=/usr/local/php70 --enable-fpm
 3. make
 4. make install
 
