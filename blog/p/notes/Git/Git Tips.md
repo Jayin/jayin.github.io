@@ -176,3 +176,22 @@ git commit -m "We really don't want Git to track this anymore!"
 
 **注意**
 `git rm --cached` 删除的是追踪状态，而不是物理文件；如果你真的是彻底不想要了，你也可以直接 rm＋忽略＋提交。
+
+### Git把Tag推送到远程仓库
+
+默认情况下，git push并不会把tag标签传送到远端服务器上，只有通过显式命令才能分享标签到远端仓库。
+
+1. push单个tag，命令格式为：`git push origin [tagname]`
+例如：
+
+    git push origin v1.0 #将本地v1.0的tag推送到远端服务器
+
+2. push所有tag，命令格式为：`git push [origin] --tags`
+例如：
+
+    git push --tags
+    # or
+    git push origin --tags
+
+
+
