@@ -5,6 +5,7 @@ Timeline
 2015
 ----
 
+- [Summary of 2015](2015/2015-12-31-Summary-of-2015.md)
 - [Love what you’re doing with EManual](2015/2015-12-20-Love what you’re doing with EManual.md)
 - [2015-10-18-第1000天](2015/2015-10-18-第1000天.md)
 - [2015-08-13-根据两点经纬度计算距离](__P__/notes/frontend/获取地理位置并计算经纬度间的距离.md)
