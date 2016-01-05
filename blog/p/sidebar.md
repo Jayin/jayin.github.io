@@ -1,4 +1,4 @@
-![avatar](http://ww3.sinaimg.cn/large/6ee3e8b3tw1ebvs42rrf5j205o05ngli.jpg)
+![avatar](http://ww3.sinaimg.cn/mw690/6ee3e8b3gw1ezox33hffbj208e08fjre.jpg)
 
 # [Jayin Ton](.)
 
