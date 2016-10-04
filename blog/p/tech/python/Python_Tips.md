@@ -25,6 +25,14 @@ php -S localhost:8000
 php -S localhost:8000 -t /data/www
 ```
 
+很多应用中，都会进行URL重写，所以PHP提供了一个设置路由脚本的功能:
+
+```shell
+php -S localhost:8000 index.php
+```
+
+这样一来，所有的请求都会由index.php来处理。
+
 ###  字符串格式化输出
 
 ```python
