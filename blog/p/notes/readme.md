@@ -9,6 +9,7 @@ Notes
 - [IDEA](IDEA/readme.md)
 - [Eclipse](eclipse/readme.md)
 - [Git](Git/readme.md)
+- [GitHub](github/readme.md)
 - [Linux](linux/readme.md)
 - [Mac](mac/readme.md)
 - [MySQL](mysql/readme.md)
