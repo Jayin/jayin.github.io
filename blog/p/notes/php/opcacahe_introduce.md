@@ -29,6 +29,8 @@ $ vim vim /etc/php5/apache2/php.ini
 
 ```ini
 [opcache]
+; dll地址(Windows环境下)
+; zend_extension=php_opcache.dll
 ;开启
 opcache.enable=1
 
