@@ -41,6 +41,9 @@ opcache.interned_strings_buffer=8
 ;最大缓存的文件数目
 opcache.max_accelerated_files=4000
 
+;60s检查一次文件更新
+opcache.revalidate_freq=60
+
 ;打开快速关闭, 打开这个在PHP Request Shutdown的时候会收内存的速度会提高
 opcache.fast_shutdown=1             
          
