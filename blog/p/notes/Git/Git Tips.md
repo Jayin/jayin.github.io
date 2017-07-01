@@ -184,14 +184,19 @@ git commit -m "We really don't want Git to track this anymore!"
 1. push单个tag，命令格式为：`git push origin [tagname]`
 例如：
 
-    git push origin v1.0 #将本地v1.0的tag推送到远端服务器
+```shell
+ #将本地v1.0的tag推送到远端服务器
+git push origin v1.0
+```
 
 2. push所有tag，命令格式为：`git push [origin] --tags`
 例如：
 
-    git push --tags
-    # or
-    git push origin --tags
+```shell
+git push --tags
+# or
+git push origin --tags
+```
 
 
 
