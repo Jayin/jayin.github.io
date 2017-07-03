@@ -105,6 +105,7 @@ python setup.py sdist upload //推荐，打包并上传
 python setup.py sdist bdist_wheel upload //所有方式一并打包上传
 ```
 
+【本文由“编程助手”发布，2017年7月3日】
 
 
 
