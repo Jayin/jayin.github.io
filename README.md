@@ -1,6 +1,3 @@
-[JayinTon.com](http://jayinton.com)
---------------
-
 This is my home page.
 
 Thanks GitHub!
